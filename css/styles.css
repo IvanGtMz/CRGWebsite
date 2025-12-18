@@ -1,23 +1,43 @@
 /* Nosotros Title,  */
 @font-face {
   font-family: 'STOWE___';
-  src: url('../assets/fonts/landing/STOWE___.TTF') format('truetype');
+  src: url('../assets/fonts/landing/STOWE___.woff2') format('woff2'),
+       url('../assets/fonts/landing/STOWE___.woff') format('woff'),
+       url('../assets/fonts/landing/STOWE___.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Nosotros P,  */
 @font-face {
   font-family: 'STOWE__I';
-  src: url('../assets/fonts/landing/STOWE__I.TTF') format('truetype');
+  src: url('../assets/fonts/landing/STOWE__I.woff2') format('woff2'),
+       url('../assets/fonts/landing/STOWE__I.woff') format('woff'),
+       url('../assets/fonts/landing/STOWE__I.TTF') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'ArapeyItalic';
-  src: url('../assets/fonts/landing/ArapeyItalic-LwGZ.ttf') format('truetype');
+  src: url('../assets/fonts/landing/ArapeyItalic-LwGZ.woff2') format('woff2'),
+       url('../assets/fonts/landing/ArapeyItalic-LwGZ.woff') format('woff'),
+       url('../assets/fonts/landing/ArapeyItalic-LwGZ.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'ArapeyRegular';
-  src: url('../assets/fonts/landing/ArapeyRegular-X2Md.ttf') format('truetype');
+  src: url('../assets/fonts/landing/ArapeyRegular-X2Md.woff2') format('woff2'),
+       url('../assets/fonts/landing/ArapeyRegular-X2Md.woff') format('woff'),
+       url('../assets/fonts/landing/ArapeyRegular-X2Md.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 /* ------------------------- PESTAÑA -> NOSOTROS ------------------------- */
