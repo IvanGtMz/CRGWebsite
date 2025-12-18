@@ -1,0 +1,80 @@
+/* error.css - Estilos exclusivos para la página 404 */
+
+.error-main {
+    min-height: 70vh; /* Asegura que ocupe buen espacio vertical entre header y footer */
+    background-color: #fff; /* Fondo limpio estilo editorial */
+    padding: 3rem 1rem;
+}
+
+/* El número gigante */
+.error-code {
+    font-family: 'STOWE___', serif; /* Tu fuente de títulos */
+    font-size: clamp(8rem, 15vw, 15rem); /* Responsivo gigante */
+    color: #000;
+    line-height: 1;
+    margin: 0;
+}
+
+/* Título de mensaje */
+.error-title {
+    font-family: 'STOWE___', serif;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    color: #0e2745; /* El azul oscuro de la marca o negro */
+    margin-bottom: 1.5rem;
+}
+
+/* Texto descriptivo */
+.error-text {
+    font-family: 'ArapeyItalic', serif; /* Tu fuente elegante para textos */
+    font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+    color: #333;
+    max-width: 500px;
+    margin: 0 auto; /* Centrado en móvil */
+}
+
+/* Ajustes de alineación en escritorio para el texto */
+@media (min-width: 992px) {
+    .error-text {
+        margin: 0; /* Quitar centrado automático en escritorio */
+    }
+    
+    /* Línea divisoria vertical entre el 404 y el texto solo en escritorio */
+    .border-r-custom {
+        border-right: 2px solid #000;
+        padding-right: 3rem;
+    }
+}
+
+/* Botón personalizado para el error (Inversión del botón del landing) */
+.error-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: 2px solid #000;
+    background: transparent;
+    color: #000 !important; /* Forzar negro */
+    font-family: sans-serif; /* O la fuente que uses en botones */
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.error-btn:hover {
+    background: #000;
+    color: #fff !important;
+}
+
+/* Ajustes menores para footer y navbar si es necesario */
+.bg-black {
+    background-color: #000 !important;
+}
+
+/* ... resto de tu código CSS anterior ... */
+
+/* Nuevo estilo para el logo del 404 */
+.error-logo {
+     /* Un tamaño elegante, ni muy grande ni muy chico */
+    width: 40rem;       /* En móviles ocupará el 80% del ancho si es menor a 350px */
+    height: auto;
+    opacity: 0.9;     /* Un toque sutil para que se integre bien */
+}

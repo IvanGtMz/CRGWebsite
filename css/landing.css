@@ -1,3 +1,4 @@
+/* Para Textos */
 @font-face {
   font-family: 'ArapeyItalic';
   src: url('../assets/fonts/landing/ArapeyItalic-LwGZ.ttf') format('truetype');
@@ -9,30 +10,52 @@
   src: url('../assets/fonts/landing/ArapeyRegular-X2Md.ttf') format('truetype');
   font-display: swap
 }
+
+/* Para Titulos */
 @font-face {
   font-family: 'STOWE___';
   src: url('../assets/fonts/landing/STOWE___.TTF') format('truetype');
   font-display: swap
 }
+
 @font-face {
   font-family: 'STOWE__I';
   src: url('../assets/fonts/landing/STOWE__I.TTF') format('truetype');
   font-display: swap
 }
-h1 {
+
+#nuestrogrupo {
   font-family: 'STOWE___', sans-serif;
-  
+
   padding-top: 4rem;
-  padding-bottom: 1rem;
-  
+  padding-bottom: 1.9rem;
+
   font-size: 300%;
 }
+
+#marcas-y-proyectos {
+
+  font-family: 'STOWE___', sans-serif;
+  padding-bottom: 4rem;
+  font-size: 300%;
+
+}
+
+#identidad {
+  font-family: 'STOWE___', sans-serif;
+
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+
+  font-size: 300%;
+}
+
 
 h2 {
   font-family: 'ArapeyRegular', sans-serif;
   font-size: 2rem;
   padding-top: 2rem;
-  
+
 
 }
 
@@ -53,9 +76,11 @@ body {
 body.fade-in {
   opacity: 1;
 }
+
 body {
-  background-color:  #f8f9fa;
+  background-color: #f8f9fa;
 }
+
 /* HERO SECTION */
 /* Hero vídeo full‑screen */
 header.video-hero {
@@ -131,7 +156,7 @@ header.video-hero .brand-overlay .brand-text {
   height: auto;
   margin-top: 3%;
   margin-bottom: 8%;
-  
+
 }
 
 .crg-nuestrogrupo-img img {
@@ -141,15 +166,19 @@ header.video-hero .brand-overlay .brand-text {
   padding-top: 10%;
 }
 
-.crg-nuestrogrupo-img h2{
+.crg-nuestrogrupo-img h2 {
   font-family: 'ArapeyItalic', sans-serif;
   font-size: 1.5rem;
-  padding-bottom: 35%;
+  padding-bottom: 30%;
 
 }
 
 .crg-nuestrogrupo-img1 {
   margin-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 2.5%;
+  margin-bottom: 1%;
 }
 
 
@@ -160,17 +189,11 @@ header.video-hero .brand-overlay .brand-text {
   height: auto;
   padding-top: 10%;
   margin-bottom: 10%;
-  
+
 }
 
 
-.crg-nuestrogrupo p {
-  font-family: 'DMSans-Italic', sans-serif;
-  font-size: 150%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  /* line-height: 1.5; */
-}
+
 
 .crg-quienessomos h1 {
   padding-top: 7rem;
@@ -181,8 +204,8 @@ header.video-hero .brand-overlay .brand-text {
   font-size: 150%;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
   /* line-height: 1.5; */
 }
 
@@ -191,8 +214,8 @@ header.video-hero .brand-overlay .brand-text {
   font-size: 150%;
   margin-top: 1rem;
   margin-bottom: 3rem;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 17%;
+  margin-right: 17%;
   /* line-height: 1.5; */
 }
 

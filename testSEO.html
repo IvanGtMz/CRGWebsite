@@ -1,0 +1,147 @@
+<head>
+    <meta charset="utf-8">
+    <title>Casa Robles Group | Desarrollo y Servicios en León, Gto</title>
+
+    <meta name="description"
+        content="Bienvenido a Casa Robles Group (CRG). Somos un grupo empresarial en León, Guanajuato, comprometido con el desarrollo a través de alimentos, formación y contenidos.">
+
+    <meta name="keywords" content="Casa Robles Group, CRG, Casaroblesgroup, León Guanajuato, Corporativo, Servicios">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Casa Robles Group - Bienvenido">
+    <meta property="og:description" content="Entra y conoce nuestras divisiones: Creación, Formación e Información.">
+    <meta property="og:image" content="assets/img/landing/posterCRG.webp">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <div class="row w-100 h-100 align-items-center justify-content-center g-0">
+            <div class="col-12 col-lg-6 d-flex flex-column  px-3 px-lg-5 order-2 order-lg-1">
+                <div class="text-block">
+                    <h2 class="text-uppercase text-muted fs-6 mb-0">Casa Robles Group</h2>
+
+                    <h1 class="crg-title">Comprometidos con el Desarrollo</h1>
+                    ```
+
+                    ---
+
+                    ### 2. Mejoras para `landing.html` (El contenido real)
+
+                    Aquí está el contenido fuerte. Google necesita entender la jerarquía. Actualmente tienes varios `
+                    <h1>`. **Regla de oro del SEO:** Solo debe haber un `<h1>` por página y debe contener la palabra
+                            clave principal.
+
+                            **Cambios clave:**
+                            1. **Canonical Tag:** Para evitar contenido duplicado.
+                            2. **Datos Estructurados (JSON-LD):** Este es el "secreto" para las marcas locales. Es un
+                            código que el usuario no ve, pero le dice a Google: "Hola, somos una Organización llamada
+                            Casa Robles Group ubicada en León".
+
+                            **Reemplaza el `
+
+                            <head>` y la estructura del `main` así:**
+
+                                ```html
+
+                                <head>
+                                    <meta charset="UTF-8" />
+                                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+                                    <title>Casa Robles Group | Corporativo de Alimentos, Medios y Proyectos</title>
+                                    <meta name="description"
+                                        content="Sitio oficial de Casa Robles Group. Descubre nuestras marcas: Home&Foods, Plataforma News, CENFI y más. Innovación y desarrollo desde León, Guanajuato.">
+
+                                    <link rel="canonical" href="https://www.casaroblesgroup.com/landing.html" />
+
+                                    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "Casa Robles Group",
+    "alternateName": ["CRG", "CasaRoblesGroup"],
+    "url": "https://www.casaroblesgroup.com",
+    "logo": "https://www.casaroblesgroup.com/assets/img/landing/CRG_HOLDINGS.webp",
+    "description": "Comprometidos con el desarrollo integral a través de productos y servicios de calidad.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "León",
+      "addressRegion": "Guanajuato",
+      "addressCountry": "MX"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+52-477-246-7436",
+      "contactType": "customer service"
+    }
+  }
+  </script>
+
+                                    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+                                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                                        rel="stylesheet" />
+                                    <link rel="stylesheet" href="./css/landing.css" />
+                                    <link rel="stylesheet" href="./css/nav.css">
+                                    <link rel="stylesheet" href="./css/footer.css">
+                                </head>
+
+                                <header class="video-hero">
+                                    <div class="brand-overlay">
+                                        <h1 class="visually-hidden">Casa Robles Group</h1>
+
+                                        <img src="./assets/img/landing/CRG_HOLDINGS.webp"
+                                            alt="Logotipo Casa Robles Group Holdings" loading="lazy">
+                                        <div class="brand-text">Comprometidos con el Desarrollo</div>
+                                    </div>
+                                </header>
+
+                                <main>
+                                    <section>
+                                        <div class="container-fluid ">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <h2 id="nuestroGrupo">Nuestro grupo</h2>
+                                                    ```
+
+                                                    ### 3. El paso vital que falta: Indexación (Google Search Console)
+
+                                                    Dado que alojaste esto en AWS (probablemente S3 + CloudFront), el
+                                                    servidor es pasivo. Google no va a "descubrir" tu sitio mágicamente
+                                                    a menos que tenga muchos enlaces externos.
+
+                                                    Como nadie encuentra la página, es muy probable que **no esté
+                                                    indexada**. Tienes que hacer esto obligatoriamente:
+
+                                                    1. **Entra a Google Search Console** con tu cuenta de Google.
+                                                    2. Agrega la propiedad (el dominio `casaroblesgroup.com`).
+                                                    3. Te pedirá verificar que eres dueño. Como estás en AWS, la forma
+                                                    más fácil es subir el archivo HTML que ellos te dan a tu bucket S3,
+                                                    o agregar un registro TXT en Route53.
+                                                    4. Una vez verificado, ve a la sección **"Inspección de URL"**,
+                                                    escribe tu dominio y dale clic a **"Solicitar Indexación"**.
+                                                    5. **Sitemap:** Crea un archivo `sitemap.xml` (hay generadores
+                                                    online gratuitos) y súbelo a tu bucket S3. Luego indícaselo a Search
+                                                    Console.
+
+                                                    ### Resumen de la solución
+
+                                                    1. **Etiquetas Meta:** Agregué `title` y `description` con la frase
+                                                    exacta "Casa Robles Group" y "León".
+                                                    2. **Jerarquía:** Puse el nombre de la empresa en etiquetas `<h1>`
+                                                        (aunque sea oculto con `visually-hidden` de Bootstrap) para que
+                                                        el robot sepa que eso es lo más importante.
+                                                        3. **JSON-LD:** Agregué el script de datos estructurados para
+                                                        decirle a Google explícitamente "Somos una empresa".
+                                                        4. **Alt Texts:** Cambié `alt="CRG Logo"` por `alt="Logotipo
+                                                        Casa Robles Group Holdings"` en el código.
+
+                                                        Implementa estos cambios, sube los archivos a tu S3, invalida la
+                                                        caché de CloudFront (para que los cambios se reflejen de
+                                                        inmediato) y solicita la indexación en Search Console. Con esto,
+                                                        deberías empezar a aparecer en unas semanas. ¿Te gustaría que te
+                                                        ayude a generar el archivo `sitemap.xml` también?
